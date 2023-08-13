@@ -1,0 +1,154 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(149, 149, 149);
+  background-color: white;
+  z-index: 100;
+}
+
+header h1 {
+  margin-left: 5%;
+  font-size: 35px;
+  color: #c72092;
+}
+
+header h1 u {
+  color: #6c14d0;
+}
+
+#res {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  width: 55%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li a {
+  font-size: 19px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: #6c14d0;
+}
+
+header ul li a:hover {
+  color: #c72092;
+}
+
+#icons {
+  font-size: 18px;
+  margin-right: 4%;
+}
+
+.fa-user,
+.fa-heart,
+.fa-cart-shopping {
+  margin-right: 12px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: #6c14d0;
+}
+
+.fa-user:hover,
+.fa-heart:hover,
+.fa-cart-shopping:hover {
+  color: #c72092;
+}
+
+#bar {
+  transform: translateX(-100%);
+  font-size: 20px;
+  position: absolute;
+}
+
+.fa-xmark {
+  display: none;
+  position: absolute;
+  color: rgb(63, 61, 61);
+  font-size: 20px;
+  top: 15px;
+  left: 15px;
+}
+
+.fa-xmark:hover,
+#bar {
+  color: #c72092;
+}
+
+@media(min-width:754px) and (max-width:1000px) {
+  #res {
+    width: 65%;
+  }
+  header ul {
+    width: 70%;
+  }
+}
+
+@media(max-width:753px) {
+  #res {
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    width: 180px;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2edf8;
+    transition-duration: 1s;
+    border-radius: 20px;
+  }
+
+  #res:hover{
+    box-shadow: 0px 0px 10px #c72092;
+  }
+
+  header ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    margin-bottom: 17px;
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+  }
+
+  #res.act {
+    right: 15px;
+  }
+
+  header h1 {
+    margin-left: 2%;
+  }
+
+  .fa-xmark {
+    display: flex;
+  }
+
+  #bar {
+    position: absolute;
+    right: 5%;
+    transition-duration: 1s;
+  }
+
+}
