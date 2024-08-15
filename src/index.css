@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   font-family: Rubik;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -301,6 +302,8 @@
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 @media(min-width:754px) and (max-width:1000px) {
@@ -478,7 +481,8 @@
   width: 96%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
 }
 
